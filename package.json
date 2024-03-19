@@ -1,14 +1,14 @@
 {
-  "name": "portfolio-vite",
+  "name": "cdp-portfolio",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://sahasourav17.github.io/cdp-portfolio/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "predeploy": "npm run build && @powershell dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build && cp dist/index.html dist/404.html",
+    "build": "vite build && @powershell copy dist/index.html dist/404.html",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

@@ -12,7 +12,7 @@ import Error from "./Error";
 
 const Homepage = ({ darkMode }) => {
   return (
-    <Router basename={`/Portfolio-Vite`}>
+    <Router basename={`/cdp-portfolio`}>
       <div className={darkMode ? "dark" : ""}>
         <Routes>
           <Route path="" index element={<Hero />} />
